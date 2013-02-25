@@ -7,7 +7,7 @@ This project is built on the Hull platform, with [Aura](github.com/aurajs/aura),
 -----------------------
 # Instant Win
 
-This is demo a entirely built with Hull.
+This is demo entirely built with Hull.
 Connect, and immediately know if you've won or lost.
 
 ## Skip the Queue !
