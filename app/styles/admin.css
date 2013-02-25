@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body, button, input, textarea {
+  color: #555;
+  font: 13px/1.6 "Helvetica Neue", Helvetica, Arial, Geneva;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hull-instant-admin {
+  margin: 30px auto;
+  width: 500px;
+}
+
+.hull-instant-admin__section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.hull-instant-admin__section label {
+  display: block;
+  margin-top: 10px;
+}
+
+.hull-instant-admin input,
+.hull-instant-admin select,
+.hull-instant-admin textarea {
+  display: block;
+  width: 100%;
+}
+
+.hull-instant-admin button {
+  margin: 10px 0 0;
+  padding: 15px 10px;
+  border: 0;
+  border-radius: 3px;
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1px;
+  cursor: pointer;
+}
+
+.hull-instant-admin textarea {
+  padding: 10px;
+  font-family: monospace;
+}
