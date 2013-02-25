@@ -1,0 +1,1 @@
+Hull.init({appId:"512782505cc0175d22000009",orgUrl:"http://develop.hullapp.dev",debug:!0});var foo;Hull.widget("instant_win_admin",{templates:["instant_admin"],initialize:function(){},create:function(){},addPrize:function(){},replacePrizes:function(){}});
