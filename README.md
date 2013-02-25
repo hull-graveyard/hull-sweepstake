@@ -40,7 +40,7 @@ Linux should mostly work the same.
 
 3. Copy the newly created Instant Win's ID, and insert a ``instant_win@hull`` widget inside the main HTML page.
 
-        <!-- Quiz Widget -->
+        <!-- Instant Win Widget -->
         <div data-hull-widget="instant_win@hull" data-hull-id="512383795ef8755c63000001"></div>
 
 4. … *Customization steps*
