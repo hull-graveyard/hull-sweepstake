@@ -7,39 +7,36 @@ This project is built on the Hull platform, with [Aura](github.com/aurajs/aura),
 -----------------------
 # Instant Win
 
-This is demo a entirely built with Hull.  
+This is demo a entirely built with Hull.
 Connect, and immediately know if you've won or lost.
 
+## Skip the Queue !
 
-### Skip the Queue !
-What you'll win here is an immediate access to hull.  
+What you'll win here is an immediate access to hull.
 Also, somewhere deep in the source are hidden more codes to gain immediate access to Hull, without waiting for an invite.
 
 [Play Instant Win (http://hull.github.com/instant-win)](http://hull.github.com/instant-win)
 
-The following features are demoed in this app.  
+The following features are demoed in this app.
 It has no server code and barely any Javascript.
 
 * Login with Twitter
-* Use a hull [Instant Win widget](http://localhost:4567/docs/widgets/packaged_widgets/#hull-widget-instant_win) to know if you've won or lost. 
+* Use a hull [Instant Win widget](http://hull.io/docs/widgets/packaged_widgets/#hull-widget-instant_win) to know if you've won or lost.
 * Share your result on Twitter
 
-The steps below are tailored for Mac environments.  
+The steps below are tailored for Mac environments.
 Linux should mostly work the same.
 
 ## How it was done
-
 
 1. Create a new Hull app using our [Grunt-init task](https://github.com/hull/grunt-init-hull).
 
         grunt-init instant-win
 
-
 2. Add a new HTML page called ``admin.html``, and insert a ``instant_win_admin@hull`` widget to write your questions.
 
         <!-- Instant Win Admin Widget -->
         <div data-hull-widget="instant_win_admin@hull"></div>
-
 
 3. Copy the newly created Instant Win's ID, and insert a ``instant_win@hull`` widget inside the main HTML page.
 
@@ -97,5 +94,3 @@ Deploy your app to heroku:
 
     git subtree push --prefix dist heroku master
     open http://your_amazing_app.herokuapp.com
-    
-
