@@ -1,0 +1,39 @@
+<div class="hull-instant-admin">
+  <h1>Instant Win Admin</h1>
+
+  <div class="hull-instant-admin__section">
+    <h2 class="hull-instant-admin__section-title">Create an Instant Win</h2>
+
+    <div>
+      <label for="hull-instant-name">Name: </label>
+      <input id="hull-instant-name" name="hull-instant-name" type="text">
+    </div>
+
+    <div>
+      <label for="hull-instant-description">Description: </label>
+      <input id="hull-instant-description" name="hull-instant-description" type="text">
+    </div>
+
+    <button data-hull-action="create">Create</button>
+  </div>
+
+  <div class="hull-instant-admin__section">
+    <h2 class="hull-instant-admin__section-title">Update prizes</h2>
+
+    <div>
+      <label for="hull-achievement-id">Achievement: </label>
+      <select id="hull-achievement-id" name="hull-achievement-id">
+        {{#each achievements}}
+          <option value="{{this.id}}">{{this.name}} - {{this.id}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div>
+      <label for="hull-prizes-json">Prizes JSON: </label>
+      <textarea id="hull-prizes-json" name="hull-prizes-json" rows="10" cols="30"></textarea>
+    </div>
+
+    <button data-hull-action="replacePrizes">Update Prizes</button>
+  </div>
+</div>
