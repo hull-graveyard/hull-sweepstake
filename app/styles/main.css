@@ -19,7 +19,7 @@ body, button {
 
 .hull-instant {
   width: 500px;
-  margin: -100px auto 0;
+  margin: -50px auto 0;
   text-align: center;
 }
 
@@ -32,7 +32,7 @@ body, button {
   margin-top: 0;
 }
 
-.hull-btn--instant {
+.hull-btn {
   padding: 35px 30px;
   margin: 0;
   border: 0;
