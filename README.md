@@ -5,6 +5,7 @@ This project is built on the Hull platform, with [Aura](github.com/aurajs/aura),
 **You don't need an account on Hull to use it locally, the App key is already present in this app.**
 
 -----------------------
+
 # Instant Win
 
 This is demo entirely built with Hull.
@@ -43,7 +44,7 @@ Linux should mostly work the same.
         <!-- Instant Win Widget -->
         <div data-hull-widget="instant_win@hull" data-hull-id="512383795ef8755c63000001"></div>
 
-4. … *Customization steps*
+4. Create `widget/instant_win/won.hbs` to override the default template.
 
 5. Do a bit of CSS to have an effective design.
 
