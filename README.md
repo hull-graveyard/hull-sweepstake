@@ -34,21 +34,28 @@ Linux should mostly work the same.
 
         grunt-init instant-win
 
-2. Add a new HTML page called ``admin.html``, and insert a ``instant_win_admin@hull`` widget to write your questions.
+2. Create a HTML page called ``admin.html``, and insert a ``instant_win_admin@hull`` widget to write your questions.
 
         <!-- Instant Win Admin Widget -->
         <div data-hull-widget="instant_win_admin@hull"></div>
 
-3. Copy the newly created Instant Win's ID, and insert a ``instant_win@hull`` widget inside the main HTML page.
+3. From there, create a new Instant Win, give it a name, a description, and a hard to guess secret.
+
+
+4. Enter the Prizes for this Instant Win. The format is plain JSON.
+For your convenience a template for it is bundled in this repository, in `prizes.json`
+
+
+5. Copy the newly created Instant Win's ID, and insert a ``instant_win@hull`` widget inside the main HTML page.
 
         <!-- Instant Win Widget -->
-        <div data-hull-widget="instant_win@hull" data-hull-id="512383795ef8755c63000001"></div>
+        <div data-hull-widget="instant_win@hull" data-hull-id="YOUR_INSTANT_WIN_ID"></div>
 
-4. Create `widget/instant_win/won.hbs` to override the default template.
+6. Create `widget/instant_win/won.hbs` to override the default template.
 
-5. Do a bit of CSS to have an effective design.
+7. Do a bit of CSS for an effective design.
 
-6. **There's no step 6.**
+8. **There's no step 8.**
 
 
 ## Installing
