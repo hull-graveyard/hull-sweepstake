@@ -36,27 +36,33 @@ Linux should mostly work the same.
 
 2. Create a HTML page called ``admin.html``, and insert a ``instant_win_admin@hull`` widget to write your questions.
 
-        <!-- Instant Win Admin Widget -->
         <div data-hull-widget="instant_win_admin@hull"></div>
 
 3. From there, create a new Instant Win, give it a name, a description, and a hard to guess secret.
 
+4. Enter the Prizes for this Instant Win. The format is plain JSON. For your
+   convenience a template for it is bundled in this repository, in `prizes.json`
 
-4. Enter the Prizes for this Instant Win. The format is plain JSON.
-For your convenience a template for it is bundled in this repository, in `prizes.json`
+5. Copy the newly created Instant Win's ID, and insert a `instant_win@hull`
+   widget inside the main HTML page.
 
-
-5. Copy the newly created Instant Win's ID, and insert a ``instant_win@hull`` widget inside the main HTML page.
-
-        <!-- Instant Win Widget -->
         <div data-hull-widget="instant_win@hull" data-hull-id="YOUR_INSTANT_WIN_ID"></div>
 
-6. Create `widget/instant_win/won.hbs` to override the default template.
+6. Create `widget/instant_win/working.hbs` to remove the default wording and add
+   a spinner.
 
-7. Do a bit of CSS for an effective design.
+7. Create `widget/instant_win/won.hbs` to change the way we present prizes.
 
-8. **There's no step 8.**
+8. Insert a `share@hull` widget inside the main HTML page.
 
+        <div data-hull-widget="share@hull" data-provider="twitter" data-hull-label="Tweet!" data-hull-text=""></div>
+
+   This will create a "Tweet!" link that will open a Twitter popup prefiled with
+   the value that you've put in `data-hull-text`.
+
+9. Do a bit of CSS for an effective design.
+
+10. **There's no step 10.**
 
 ## Installing
 
@@ -80,9 +86,7 @@ then install grunt and it's modules in the project's folder.
 
 ## Running the app
 
-**To run the app locally, run:**
-
-    grunt server
+To run the app locally, run: `grunt server`.
 
 ## Deploying
 
