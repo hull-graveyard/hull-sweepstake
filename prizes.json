@@ -1,0 +1,13 @@
+{
+  "prizes": [
+    {
+      "name": "A cool prize",
+      "description": "The prize description",
+      "available_at": "2013-02-27T13:40:10.996Z"
+    },
+    {
+      "name": "Another prize",
+      "available_at": "2013-02-27T13:40:34.012Z"
+    }
+  ]
+}
