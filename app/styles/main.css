@@ -6,7 +6,7 @@ body {
 }
 
 body, button {
-  font: 20px/1.6 "Proxima Nova", "Helvetica Neue", Helvetica, Arial, Geneva;
+  font: 20px/1.6 "proxima-nova", "Helvetica Neue", Helvetica, Arial, Geneva;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -17,6 +17,10 @@ body, html, .main {
 
 a {
  color: #373F4A;
+}
+
+p {
+  margin: 10px 0;
 }
 
 .main:before {
@@ -128,10 +132,6 @@ a {
   font-size: 18px;
 }
 
-p {
-  margin: 5px 0;
-}
-
 .hull-share--twitter {
   display: inline-block;
   width: 30px;
@@ -142,6 +142,9 @@ p {
   font-size: 0;
   line-height: 0;
   opacity: .5;
+   -webkit-transition: opacity .3s ease;
+   -moz-transition: opacity .3s ease;
+   transition: opacity .3s ease;
 }
 
 .hull-share--twitter:hover {
