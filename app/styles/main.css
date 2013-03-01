@@ -1,76 +1,151 @@
-html {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
 body {
-  display:table-cell;
-  vertical-align:middle;
-  background: #0968CF;
   margin: 0;
-}
-
-body, button {
-  font: 18px/1.6 "Helvetica Neue", Helvetica, Arial, Geneva;
-  color: #6EA8E7;
-  -webkit-font-smoothing: antialiased;
-}
-
-.hull-instant {
-  width: 500px;
-  margin: -50px auto 0;
+  background: #f1f3f5;
+  color: #7c8a9e;
   text-align: center;
 }
 
-.hull-instant__title {
-  margin: 0;
-  color: #fff;
+body, button {
+  font: 20px/1.6 "Proxima Nova", "Helvetica Neue", Helvetica, Arial, Geneva;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-.hull-instant__description {
-  margin-top: 0;
+body, html, .main {
+  height: 100%;
+}
+
+a {
+ color: #373F4A;
+}
+
+.main:before {
+  display: inline-block;
+  height: 100%;
+  content: '';
+  vertical-align: middle;
+}
+
+[data-hull-widget="instant_win@hull"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+[data-hull-widget="share@hull"] {
+  position: fixed;
+  bottom: 0;
+  padding: 30px 0;
+  width: 100%;
 }
 
 .hull-btn {
-  padding: 35px 30px;
+  display: inline-block;
   margin: 0;
+  padding: 30px 25px;
   border: 0;
+  border-radius: 8px;
   background: #fff;
-  background: rgba(255,255,255,.94);
-  color: #0968CF;
-  line-height: 0;
+  background-image: -o-linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: -moz-linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: -webkit-linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: -ms-linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
+  -webkit-box-shadow: inset 0px -3px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0px -3px 0 rgba(0,0,0,0.1);
+  box-shadow: inset 0px -3px 0 rgba(0,0,0,0.1);
+  color: #fff;
+  vertical-align: bottom;
   font-weight: bold;
+  line-height: 0;
+  text-decoration: none;
   cursor: pointer;
-  border-radius: 2px;
-  -webkit-transition: background-color .2s ease-in;
-  -webkit-animation: glow .8s ease infinite alternate;
 }
 
-.hull-btn--instant:hover {
-  background: #fff;
+.hull-btn:hover {
+  background-image: -o-linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
+  background-image: -moz-linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
+  background-image: -webkit-linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
+  background-image: -ms-linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
+  background-image: linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
+}
+
+.hull-btn:active {
+  background-image: -o-linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: -moz-linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: -webkit-linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: -ms-linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
+  -webkit-box-shadow: inset 0px 3px 1px rgba(0,0,0,0.08), 0px 1px 1px rgba(255,255,255,1);
+  -moz-box-shadow: inset 0px 3px 1px rgba(0,0,0,0.08), 0px 1px 1px rgba(255,255,255,1);
+  box-shadow: inset 0px 3px 1px rgba(0,0,0,0.08), 0px 1px 1px rgba(255,255,255,1);
+}
+
+.hull-instant {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.hull-instant--intro .hull-instant__title {
+  display: inline-block;
+  margin: 0;
+  width: 200px;
+  height: 76px;
+  background: transparent url('/images/logo.png') no-repeat 0 0;
+  vertical-align: top;
+  text-indent: -1000000%;
+  font-size: 0;
+  line-height: 0;
+  opacity: .8;
+}
+
+.hull-instant--intro .hull-instant__description {
+  margin: 30px 0;
+}
+
+.hull-instant--won .hull-btn {
+  display: block;
+  margin-top: 15px;
 }
 
 .hull-instant-result {
-  width: 300px;
-  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
   background: #fff;
-  color: #555;
-  font-size: 14px;
-  padding: 35px;
-  border-radius: 2px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, rgba(0, 0, 0, .3));
+  -webkit-box-shadow: 0px 2px 8px 0 rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 2px 8px 0 rgba(0,0,0,0.05);
+  box-shadow: 0px 2px 8px 0 rgba(0,0,0,0.05);
   -webkit-animation: bounce .4s ease;
 }
 
 .hull-instant-result__title {
-  color: #333;
-  font-size: 22px;
+  margin: 0 0 15px;
+  font-size: 26px;
+  color: #373F4A;
 }
 
-@-webkit-keyframes glow {
-  0% { box-shadow: 0 0 10px rgba(255, 255, 255, .1); }
-  100% { box-shadow: 0 0 40px rgba(255, 255, 255, .4); }
+.hull-instant-result__description {
+  margin: 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.hull-share--twitter {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background: transparent url('/images/twitter.png') no-repeat 0 0;
+  text-decoration: none;
+  text-indent: -1000000%;
+  font-size: 0;
+  line-height: 0;
+  opacity: .5;
+}
+
+.hull-share--twitter:hover {
+  opacity: 1;
 }
 
 @-webkit-keyframes bounce {
