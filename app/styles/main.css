@@ -94,7 +94,7 @@ p {
   margin: 0;
   width: 200px;
   height: 76px;
-  background: transparent url('/images/logo.png') no-repeat 0 0;
+  background: transparent url('../images/logo.png') no-repeat 0 0;
   vertical-align: top;
   text-indent: -1000000%;
   font-size: 0;
@@ -136,7 +136,7 @@ p {
   display: inline-block;
   width: 30px;
   height: 25px;
-  background: transparent url('/images/twitter.png') no-repeat 0 0;
+  background: transparent url('../images/twitter.png') no-repeat 0 0;
   text-decoration: none;
   text-indent: -1000000%;
   font-size: 0;

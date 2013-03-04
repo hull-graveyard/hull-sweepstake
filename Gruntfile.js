@@ -11,7 +11,6 @@ var yeomanConfig = {
 
 
 module.exports = function (grunt) {
-
   'use strict';
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
@@ -25,7 +24,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // default watch configuration
     watch: {
       widgets: {
         files: ['app/widgets/**/*.js'],
@@ -87,22 +85,30 @@ module.exports = function (grunt) {
       dist: ['.tmp', 'dist/*'],
       server: '.tmp'
     },
+
     uglify: {
       dist: {
         files: {
-          'dist/application.js': [
+          'dist/scripts/application.js': [
             'app/scripts/*.js'
+          ],
+          'dist/scripts/components.js': [
+            'app/components/spin.js/dist/spin.js',
+            'app/components/jquery/jquery.min.js'
           ]
         }
       }
     },
+
     useminPrepare: {
       html: 'index.html'
     },
+
     usemin: {
       html: ['dist/*.html'],
       css: ['dist/styles/*.css']
     },
+
     imagemin: {
       dist: {
         files: [{
@@ -113,31 +119,13 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     cssmin: {
       dist: {
         files: {
-          'dist/application.css': [
-            'app/components/ratchet/dist/ratchet.css',
-            'app/components/font-awesome/css/font-awesome.css',
-            'app/styles/*.css'
-          ]
+          'dist/styles/main.min.css': ['app/styles/main.css'],
+          'dist/styles/admin.min.css': ['app/styles/admin.css']
         }
-      }
-    },
-
-    copy: {
-      dist: {
-        files: [
-          { dest: 'dist/index.php', src: 'dist/index.html' },
-          { cwd: 'app/', dest: 'dist/', src: ['.htaccess', 'robots.txt'], expand: true },
-          {
-            cwd: 'app/components/font-awesome/font/',
-            dest: 'dist/font/',
-            filter: 'isFile',
-            src: '*',
-            expand: true
-          }
-        ]
       }
     },
 
@@ -164,20 +152,12 @@ module.exports = function (grunt) {
     },
 
     concat: {
-      options: {
-        separator: "\n\n\n\n//--------\n\n\n"
-      },
       dist: {
         src: ['app/widgets/**/*.js'],
         dest: 'app/scripts/widgets.js'
       }
     }
-
   });
-
-  grunt.renameTask('regarde', 'watch');
-
-  grunt.renameTask('mincss', 'cssmin');
 
   grunt.registerTask('server', [
     'clean:server',
@@ -199,13 +179,11 @@ module.exports = function (grunt) {
     'jshint',
     'handlebars',
     'useminPrepare',
-
     'uglify',
     'imagemin',
-    'htmlmin',
     'cssmin',
-    'usemin',
-    'copy'
+    'htmlmin',
+    'usemin'
   ]);
 
   grunt.registerTask('default', ['build']);
