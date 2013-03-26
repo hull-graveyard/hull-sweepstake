@@ -16,7 +16,7 @@ Connect, and immediately know if you've won or lost.
 What you'll win here is an immediate access to hull.
 Also, somewhere deep in the source are hidden more codes to gain immediate access to Hull, without waiting for an invite.
 
-[Play Instant Win (http://hull.github.com/instant-win)](http://hull.github.com/instant-win)
+[Play Instant Win (http://hull.github.com/hullinstant)](http://hull.github.com/hullinstant)
 
 The following features are demoed in this app.
 It has no server code and barely any Javascript.
