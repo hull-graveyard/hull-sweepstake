@@ -23,6 +23,27 @@ p {
   margin: 10px 0;
 }
 
+.github-ribbon {
+  position: fixed;
+  top: 46px;
+  right: -50px;
+  z-index: 100;
+  display: block;
+  padding: 5px 50px;
+  background-color: #3492D3;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
 .main:before {
   display: inline-block;
   height: 100%;
@@ -49,11 +70,11 @@ p {
   border: 0;
   border-radius: 8px;
   background: #fff;
-  background-image: -o-linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
-  background-image: -moz-linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
-  background-image: -webkit-linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
-  background-image: -ms-linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
-  background-image: linear-gradient(-90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: -o-linear-gradient(top, #3EA7DB 0%, #3492D3 100%);
+  background-image: -moz-linear-gradient(top, #3EA7DB 0%, #3492D3 100%);
+  background-image: -webkit-linear-gradient(top, #3EA7DB 0%, #3492D3 100%);
+  background-image: -ms-linear-gradient(top, #3EA7DB 0%, #3492D3 100%);
+  background-image: linear-gradient(top, #3EA7DB 0%, #3492D3 100%);
   -webkit-box-shadow: inset 0px -3px 0 rgba(0,0,0,0.1);
   -moz-box-shadow: inset 0px -3px 0 rgba(0,0,0,0.1);
   box-shadow: inset 0px -3px 0 rgba(0,0,0,0.1);
@@ -66,19 +87,19 @@ p {
 }
 
 .hull-btn:hover {
-  background-image: -o-linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
-  background-image: -moz-linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
-  background-image: -webkit-linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
-  background-image: -ms-linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
-  background-image: linear-gradient(-90deg, #4DB1E3 0%, #3492D3 100%);
+  background-image: -o-linear-gradient(top, #4DB1E3 0%, #3492D3 100%);
+  background-image: -moz-linear-gradient(top, #4DB1E3 0%, #3492D3 100%);
+  background-image: -webkit-linear-gradient(top, #4DB1E3 0%, #3492D3 100%);
+  background-image: -ms-linear-gradient(top, #4DB1E3 0%, #3492D3 100%);
+  background-image: linear-gradient(top, #4DB1E3 0%, #3492D3 100%);
 }
 
 .hull-btn:active {
-  background-image: -o-linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
-  background-image: -moz-linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
-  background-image: -webkit-linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
-  background-image: -ms-linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
-  background-image: linear-gradient(90deg, #3EA7DB 0%, #3492D3 100%);
+  background-image: -o-linear-gradient(bottom, #3EA7DB 0%, #3492D3 100%);
+  background-image: -moz-linear-gradient(bottom, #3EA7DB 0%, #3492D3 100%);
+  background-image: -webkit-linear-gradient(bottom, #3EA7DB 0%, #3492D3 100%);
+  background-image: -ms-linear-gradient(bottom, #3EA7DB 0%, #3492D3 100%);
+  background-image: linear-gradient(bottom, #3EA7DB 0%, #3492D3 100%);
   -webkit-box-shadow: inset 0px 3px 1px rgba(0,0,0,0.08), 0px 1px 1px rgba(255,255,255,1);
   -moz-box-shadow: inset 0px 3px 1px rgba(0,0,0,0.08), 0px 1px 1px rgba(255,255,255,1);
   box-shadow: inset 0px 3px 1px rgba(0,0,0,0.08), 0px 1px 1px rgba(255,255,255,1);
