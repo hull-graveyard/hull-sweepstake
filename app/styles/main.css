@@ -1,8 +1,9 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   background: #f1f3f5;
   color: #7c8a9e;
   text-align: center;
+  min-width: 940px
 }
 
 body, button {
@@ -61,6 +62,7 @@ p {
   bottom: 0;
   padding: 30px 0;
   width: 100%;
+  min-width: 940px;
 }
 
 .hull-btn {
@@ -189,3 +191,8 @@ p {
 small{
   font-size: 0.8em;
 }
+
+[data-hull-widget="footer@hull"]{text-align: left;}
+  [data-hull-widget="footer@hull"] small{ font-size: 13px;}
+  .project-copyright-logo{ top:11px; }
+  .project-footer{ background-color:#fff; }
