@@ -6,7 +6,7 @@ This project is built on the Hull platform, with [Aura](github.com/aurajs/aura),
 
 -----------------------
 
-# Instant Win
+# Sweepstake
 
 This is demo entirely built with Hull.
 Connect, and immediately know if you've won or lost.
@@ -16,13 +16,13 @@ Connect, and immediately know if you've won or lost.
 What you'll win here is an immediate access to hull.
 Also, somewhere deep in the source are hidden more codes to gain immediate access to Hull, without waiting for an invite.
 
-[Play Instant Win (http://hull.github.com/hullinstant)](http://hull.github.com/hullinstant)
+[Play Sweepstake (http://hull.github.com/hull-sweepstake)](http://hull.github.com/hull-sweepstake)
 
 The following features are demoed in this app.
 It has no server code and barely any Javascript.
 
 * Login with Twitter
-* Use a hull [Instant Win widget](http://hull.io/docs/widgets/packaged_widgets/#hull-widget-instant_win) to know if you've won or lost.
+* Use a hull [Sweepstake widget](http://hull.io/docs/widgets/packaged_widgets/#hull-widget-sweepstake) to know if you've won or lost.
 * Share your result on Twitter
 
 The steps below are tailored for Mac environments.
@@ -32,26 +32,26 @@ Linux should mostly work the same.
 
 1. Create a new Hull app using our [Grunt-init task](https://github.com/hull/grunt-init-hull).
 
-        grunt-init instant-win
+        grunt-init sweepstake
 
-2. Create a HTML page called ``admin.html``, and insert a ``instant_win_admin@hull`` widget to write your questions.
+2. Create a HTML page called ``admin.html``, and insert a ``sweepstake_admin@hull`` widget to write your questions.
 
-        <div data-hull-widget="instant_win_admin@hull"></div>
+        <div data-hull-widget="sweepstake_admin@hull"></div>
 
-3. From there, create a new Instant Win, give it a name, a description, and a hard to guess secret.
+3. From there, create a new Sweepstake, give it a name, a description, and a hard to guess secret.
 
-4. Enter the Prizes for this Instant Win. The format is plain JSON. For your
+4. Enter the Prizes for this Sweepstake. The format is plain JSON. For your
    convenience a template for it is bundled in this repository, in `prizes.json`
 
-5. Copy the newly created Instant Win's ID, and insert a `instant_win@hull`
+5. Copy the newly created Sweepstake's ID, and insert a `sweepstake@hull`
    widget inside the main HTML page.
 
-        <div data-hull-widget="instant_win@hull" data-hull-id="YOUR_INSTANT_WIN_ID"></div>
+        <div data-hull-widget="sweepstake@hull" data-hull-id="YOUR_SWEEPSTAKE_ID"></div>
 
-6. Create `widget/instant_win/working.hbs` to remove the default wording and add
+6. Create `widget/sweepstake/working.hbs` to remove the default wording and add
    a spinner.
 
-7. Create `widget/instant_win/won.hbs` to change the way we present prizes.
+7. Create `widget/sweepstake/won.hbs` to change the way we present prizes.
 
 8. Insert a `share@hull` widget inside the main HTML page.
 
@@ -68,7 +68,7 @@ Linux should mostly work the same.
 
 First, clone this repository :
 
-    git clone git://github.com/hull/instant-win.git
+    git clone git://github.com/hull/hull-sweepstake.git
 
 Install [node.js](http://nodejs.org) (Only used for building the app, not needed for deployment)
 
@@ -80,7 +80,7 @@ It's amazing so you should do it anyways.
 
 then install grunt and it's modules in the project's folder.
 
-    cd instant-win/
+    cd hull-sweepstake/
     npm install
     bower install
 

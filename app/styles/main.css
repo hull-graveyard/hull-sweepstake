@@ -1,25 +1,28 @@
 body {
+}
+
+.page{
   margin: 0;
   background: #f1f3f5;
   color: #7c8a9e;
   text-align: center;
-}
-
-body, button {
   font: 20px/1.6 "proxima-nova", "Helvetica Neue", Helvetica, Arial, Geneva;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-body, html, .main {
+body, button {
+}
+
+body, html, .page {
   height: 100%;
 }
 
-a {
+.page a {
  color: #373F4A;
 }
 
-p {
+.page p {
   margin: 10px 0;
 }
 
@@ -44,14 +47,14 @@ p {
   user-select: none;
 }
 
-.main:before {
+.page:before {
   display: inline-block;
   height: 100%;
   content: '';
   vertical-align: middle;
 }
 
-[data-hull-widget="instant_win@hull"] {
+[data-hull-widget="sweepstake@hull"] {
   display: inline-block;
   vertical-align: middle;
 }
@@ -63,7 +66,7 @@ p {
   width: 100%;
 }
 
-.hull-btn {
+.page .hull-btn {
   display: inline-block;
   margin: 0;
   padding: 30px 25px;
@@ -86,7 +89,7 @@ p {
   cursor: pointer;
 }
 
-.hull-btn:hover {
+.page .hull-btn:hover {
   background-image: -o-linear-gradient(top, #4DB1E3 0%, #3492D3 100%);
   background-image: -moz-linear-gradient(top, #4DB1E3 0%, #3492D3 100%);
   background-image: -webkit-linear-gradient(top, #4DB1E3 0%, #3492D3 100%);
@@ -94,7 +97,7 @@ p {
   background-image: linear-gradient(top, #4DB1E3 0%, #3492D3 100%);
 }
 
-.hull-btn:active {
+.page .hull-btn:active {
   background-image: -o-linear-gradient(bottom, #3EA7DB 0%, #3492D3 100%);
   background-image: -moz-linear-gradient(bottom, #3EA7DB 0%, #3492D3 100%);
   background-image: -webkit-linear-gradient(bottom, #3EA7DB 0%, #3492D3 100%);
@@ -105,12 +108,12 @@ p {
   box-shadow: inset 0px 3px 1px rgba(0,0,0,0.08), 0px 1px 1px rgba(255,255,255,1);
 }
 
-.hull-instant {
+.page .hull-sweepstake {
   margin: 0 auto;
   width: 400px;
 }
 
-.hull-instant--intro .hull-instant__title {
+.page .hull-sweepstake--intro .hull-sweepstake__title {
   display: inline-block;
   margin: 0;
   width: 200px;
@@ -123,16 +126,16 @@ p {
   opacity: .8;
 }
 
-.hull-instant--intro .hull-instant__description {
+.page .hull-sweepstake--intro .hull-sweepstake__description {
   margin: 30px 0;
 }
 
-.hull-instant--won .hull-btn {
+.page .hull-sweepstake--won .hull-btn {
   display: block;
   margin-top: 15px;
 }
 
-.hull-instant-result {
+.page .hull-sweepstake-result {
   padding: 30px;
   border-radius: 8px;
   background: #fff;
@@ -142,18 +145,18 @@ p {
   -webkit-animation: bounce .4s ease;
 }
 
-.hull-instant-result__title {
+.page .hull-sweepstake-result__title {
   margin: 0 0 15px;
   font-size: 26px;
   color: #373F4A;
 }
 
-.hull-instant-result__description {
+.page .hull-sweepstake-result__description {
   margin: 0;
   font-size: 18px;
 }
 
-.hull-share--twitter {
+.page .hull-share--twitter {
   display: inline-block;
   width: 30px;
   height: 25px;
@@ -168,7 +171,7 @@ p {
    transition: opacity .3s ease;
 }
 
-.hull-share--twitter:hover {
+.page .hull-share--twitter:hover {
   opacity: 1;
 }
 
@@ -186,6 +189,6 @@ p {
   }
 }
 
-small{
+.page small{
   font-size: 0.8em;
 }

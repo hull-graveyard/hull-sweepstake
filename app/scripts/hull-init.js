@@ -1,9 +1,11 @@
 Hull.init({
   appId : '512382f9e85f4250c4000015',
-  orgUrl: 'http://hull-demos.hullapp.io'
+  orgUrl: 'http://hull-demos.hullapp.io',
+  debug:true,
+  verbose:true
 }, function() {
-  Hull.on('hull.instant_win.*.template.render', function() {
-    var el = $('.hull-instant--wokrking')[0];
+  Hull.on('hull.sweepstake.*.template.render', function() {
+    var el = $('.hull-sweepstake-working')[0];
     var spinner = Spinner({
       lines: 13,
       length: 5,

@@ -4,24 +4,27 @@
     <meta charset="utf-8">
     <title>Hullinstant</title>
     <!-- build:css styles/main.min.css -->
+    <link rel="stylesheet" href="//hullstrap.s3.amazonaws.com/stylesheets/hullstrap.css">
+
     <link rel="stylesheet" href="styles/main.css">
+    <script src="components/spin.js/dist/spin.js"></script>
     <!-- endbuild -->
     <script type="text/javascript" src="//use.typekit.net/zds7dxs.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
-    <a href="http://github.com/hull/hullinstant" class="github-ribbon">Fork me on GitHub</a>
+    <a href="http://github.com/hull/hull-sweepstake" class="github-ribbon">Fork me on GitHub</a>
 
-    <div class="main">
-      <div data-hull-widget="instant_win@hull" data-hull-id="5134cd06c4748aba2400003c"></div>
+    <div class="main page">
+      <div data-hull-widget="sweepstake@hull" data-hull-id="5134cd06c4748aba2400003c"></div>
       <div data-hull-widget="share@hull" data-hull-provider="twitter" data-hull-label="Tweet" data-hull-text="Play to win an immediate access to Hull private beta." data-hull-url="http://bit.ly/Yo0bUe" ></div>
     </div>
+    <div data-hull-widget="footer@hull"> </div>
 
     <!-- build:js scripts/components.js -->
-    <script src="components/spin.js/dist/spin.js"></script>
-    <script src="components/jquery/jquery.min.js"></script>
-    <!-- endbuild -->
-    <script src="http://hull-js.s3.amazonaws.com/develop/hull.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//hullstrap.s3.amazonaws.com/javascripts/hullstrap.js"></script>
+    <script src="https://d3f5pyioow99x0.cloudfront.net/develop/hull.js"></script>
     <!-- build:js scripts/application.js -->
     <script src="scripts/hull-init.js"></script>
     <script src="scripts/templates.js"></script>
